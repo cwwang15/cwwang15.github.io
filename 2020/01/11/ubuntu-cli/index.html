@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 4.2.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/fudan-32x32.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/fudan-32x32.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/fudan-16x16.jpg">
+  <link rel="mask-icon" href="/images/fudan-32x32.jpg" color="#222">
 
 <link rel="stylesheet" href="/css/main.css">
 
@@ -54,7 +54,7 @@
 <meta property="og:description" content="scp: 文件传输from local to server1scp -r &amp;#123;your folder or file&amp;#125; &amp;#123;username&amp;#125;@&amp;#123;ip address&amp;#125;:&amp;#123;folder in server&amp;#125;  from server to local1scp -r &amp;#123;username&amp;#125;@&amp;#123;ip">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-11T07:56:40.000Z">
-<meta property="article:modified_time" content="2020-01-11T08:15:56.211Z">
+<meta property="article:modified_time" content="2020-01-11T08:57:49.061Z">
 <meta property="article:author" content="Chuanwang WANG">
 <meta property="article:tag" content="usage">
 <meta property="article:tag" content="ubuntu">
@@ -237,7 +237,7 @@
               <span class="post-meta-item-text">Posted on</span>
               
 
-              <time title="Created: 2020-01-11 15:56:40 / Modified: 16:15:56" itemprop="dateCreated datePublished" datetime="2020-01-11T15:56:40+08:00">2020-01-11</time>
+              <time title="Created: 2020-01-11 15:56:40 / Modified: 16:57:49" itemprop="dateCreated datePublished" datetime="2020-01-11T15:56:40+08:00">2020-01-11</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -283,7 +283,7 @@
 <a id="more"></a>
 
 <h2 id="zombie"><a href="#zombie" class="headerlink" title="zombie"></a>zombie</h2><p>杀死僵尸进程</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps aux | grep -Z  # find zombie progress</span><br><span class="line">kill -9 $(ps -A -ostat,ppid | grep -e '[zZ]'| awk '&#123; print $2 &#125;')</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ps aux | grep "Z"  # find zombie progress</span><br><span class="line">kill -9 $(ps -A -ostat,ppid | grep -e '[zZ]'| awk '&#123; print $2 &#125;')</span><br></pre></td></tr></table></figure>
 
 <h2 id="iconv-格式转换"><a href="#iconv-格式转换" class="headerlink" title="iconv: 格式转换"></a>iconv: 格式转换</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">iconv -f UTF-8 -t GBK &#123;from-file&#125; -o &#123;to-file&#125;</span><br></pre></td></tr></table></figure>
 
